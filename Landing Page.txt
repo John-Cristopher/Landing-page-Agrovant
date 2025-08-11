@@ -1,0 +1,20 @@
+Compreender o escopo do projeto e construir a estrutura inicial (Esqueleto)
+
+*Analisar o mercado agrícola de itapeva
+Entender os componentes de uma landing page eficaz*
+
+***DESAFIO***
+Landing page para o "Agrovant"
+°Apresentação de um drone fictício, o "AgroVant".
+
+***FUNÇÃO DO DRONE***
+Pulverização e moniteração de lavouras com alta precisão
+
+***OBJETIVO DA PÁGINA***
+Convencer agricultores e agendar uma demonstração do produto.
+
+
+
+Ideia:
+Feito com reutilização consciente, ele é leve, resistente e cheio de charme. 🌱
+Perfeito para quem ama cuidar de plantas com estilo e economia!

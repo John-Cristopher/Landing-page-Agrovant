@@ -1,0 +1,13 @@
+html {
+  font-size: 16px;
+}
+h1{
+    font-size: 2rem; /*2x o padrão*/
+}
+p {
+    font-size: 1rem;
+}
+button {
+    font-size: 0.875rem;
+    padding: 0.624rem 1.25rem;
+}

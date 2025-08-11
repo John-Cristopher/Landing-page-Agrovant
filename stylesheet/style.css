@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --cor-primaria: #080808;
+  --cor-fonte-primaria: #fffdfd;
+  --cor-botao: #14ae5c;
+  --fonte-principal: "roboto", "sans-serif";
+  --cta-hover: #02542d;
+  --cor-box: #1e1d1d;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  list-style: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--cor-fonte-primaria);
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+h2 {
+  font-size:2rem;
+  font-weight: 700;
+  color: var(--cor-fonte-primaria);
+  text-align: center;
+  margin-bottom: 15px;
+}
+p{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--cor-fonte-primaria);
+  text-align:center;
+  margin-bottom: 10px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: var(--font-principal);
+}
+header {
+  display: flex;
+  background-color: #080808;
+  height: auto;
+  color: #fffdfd;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 10px;
+
+  .logo {
+    color: #fffdfd;
+    font-family: var(--fonte-principal);
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-grow: 1;
+  }
+}
+@media (max-width: 800px) {
+  header nav a {
+    display:none;
+  }
+}
+a {
+  color: inherit;
+  padding: 10px;
+  font-family:var(--fonte-principal);
+}
+button {
+  text-align: center;
+  background-color: var(--cor-botao);
+  padding: 2.5px;
+  border-radius: 5px;
+  border: none;
+  color: var(--cor-fonte-primaria);
+  font-family: var(--fonte-principal);
+}
+.interact {
+  cursor: pointer;
+  height: 50px;
+  width: 250px;
+}
+.interact:hover {
+  transition: 1s;
+  transform: scale(1.02);
+  background-color: var(--cta-hover);
+}
+.player,
+.report {
+  height: 35px;
+  border-radius: 20px;
+  width: auto;
+}
+.player {
+  background-color: var(--cor-fonte-primaria);
+  color: var(--cor-primaria);
+}
+.report {
+  background-color: var(--cor-primaria);
+  color: var(--cor-fonte-primaria);
+  border: var(--cor-fonte-primaria) 1px solid;
+}
+section {
+  width: 100%;
+  height: 435px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--cor-primaria);
+}
+.container1 {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+.container2 {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.container1 .text,
+.container2 .text {
+  position: relative;
+  z-index: 1;
+}
+.container3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: var(--cta-hover);
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+@media (max-width: 800px) {
+  .interact {
+    height: 45px;
+    width: 200px;
+  }
+  
+}
+.text {
+  padding: 0px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px;
+  align-items: center;
+  flex-direction: column;
+  color: #fffdfd;
+  font-family: var(--fonte-principal);
+  text-align: center;
+  width: 90%;
+  height: auto;
+}
+.container1,
+.container2,
+.container3 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.text_box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column; /* Já está assim, o que é ótimo */
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cor-primaria);
+  padding: 20px;
+}
+.text_worker {
+  width: 45%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  color: #fffdfd;
+  font-family: var(--fonte-principal);
+  text-align: start;
+  flex-direction: column;
+  padding: 5px;
+}
+.big_box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: var(--cor-primaria);
+}
+.box {
+  padding: 30px;
+  text-align: start;
+  flex-basis: 30%; /* Define uma largura base de 30% para desktop */
+  flex-grow: 1; /* Permite que os itens cresçam igualmente */
+  max-width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: var(--cor-box);
+  color: var(--cor-fonte-primaria);
+  font-family: var(--fonte-principal);
+  border: var(--cor-primaria) 1px solid;
+}
+.ball {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.ball img {
+  width: 90%;
+  height: auto;
+  border-radius: 50%;
+  border: var(--cor-fonte-primaria) 4px solid;
+}
+.form {
+  display: flex;
+  flex-basis: 50%; /* Largura base para o formulário */
+  height: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cor-fonte-primaria);
+  border-radius: 20px;
+  padding: 20px;
+  width: 70%;
+}
+@media (max-width: 800px) {
+  .container3 {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .text_worker {
+    text-align: start;
+    align-items: center;
+  }
+}
+.contact {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+.contact .text {
+  flex-basis: 45%;
+  text-align: center;
+  padding: 5 10px;
+}
+input {
+  width: 100%; /* Ocupa a largura total do seu contêiner (.form) */
+  height: 50px;
+  margin: 10px 0;
+  padding: 0 20px;
+  border-radius: 10px;
+  font-family: var(--fonte-principal);
+}
+footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cor-primaria);
+  color: var(--cor-fonte-primaria);
+  font-family: var(--fonte-principal);
+}
+
+
