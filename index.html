@@ -27,7 +27,8 @@
             muted
             playsinline
           ></video>
-          <div class="vidro-overlay"></div><div class="text">
+          <div class="vidro-overlay"></div>
+          <div class="text">
             <h1>AGROVANT</h1>
             <p>
               O drone Inteligente para <br />silvicultura de alta performance
@@ -70,7 +71,8 @@
             muted
             playsinline
           ></video>
-          <div class="vidro-overlay"></div><div class="text"><h1>Vídeo 2</h1></div>
+          <div class="vidro-overlay"></div>
+          <div class="text"><h1>Vídeo 2</h1></div>
         </div>
       </section>
       <section class="big_box">
@@ -133,9 +135,15 @@
           </p>
         </div>
         <form class="form">
-          <input type="text" placeholder="Nome completo" required />
-          <input type="email" placeholder="E-mail" required />
-          <input type="tel" placeholder="Telefone" required />
+          <label for="nome" style="display: none">Nome completo</label>
+          <input type="text" id="nome" placeholder="Nome completo" required />
+
+          <label for="email" style="display: none">E-mail</label>
+          <input type="email" id="email" placeholder="E-mail" required />
+
+          <label for="telefone" style="display: none">Telefone</label>
+          <input type="tel" id="telefone" placeholder="Telefone" required />
+
           <button type="submit">AGENDAR UMA DEMONSTRAÇÃO</button>
         </form>
       </section>
