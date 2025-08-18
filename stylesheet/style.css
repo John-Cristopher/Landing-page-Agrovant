@@ -263,6 +263,16 @@ section {
   object-fit: cover;
   z-index: 0;
 }
+/* Efeito de "vidro" semitransparente sobre o vídeo */
+.vidro-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Cor preta com 50% de transparência */
+  pointer-events: none; /* Permite cliques e interações com o conteúdo por baixo */
+}
 
 .container1 .text,
 .container2 .text {
@@ -406,11 +416,15 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* Efeito de "vidro fosco" */
   background-color: var(--cor-fonte-primaria);
+  backdrop-filter: blur(10px); /* Aplica o desfoque */
   border-radius: 10px;
-  padding: 20px;
+  border: 1px solid rgba(211, 209, 209, 0.2); /* Borda sutil */
+  padding: 30px; /* mais espaço */
   width: 70%;
   max-width: 550px;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2); /* Sombra para profundidade */
 }
 
 .contact {
@@ -438,11 +452,20 @@ input {
   border-radius: 10px;
   font-family: var(--fonte-principal);
   border: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.9); /* Fundo quase branco */
+  transition: all 0.3s ease; /* Transição para o foco */
 }
 
 /* Melhorando o estilo do placeholder */
 input::placeholder {
   color: #aaa;
+  font-style: italic;
+}
+/* Efeito de foco para acessibilidade e feedback visual */
+input:focus {
+  border-color: var(--cor-botao);
+  box-shadow: 0 0 0 3px rgba(20, 174, 92, 0.2);
+  background-color: #fff;
 }
 
 footer {
